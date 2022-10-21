@@ -43,5 +43,10 @@ public class Point {
         return "(" + x + ", " + y + ")";
 
     }
+
+    public static double distance ( Point p1, Point p2) {
+        Segment segment = new Segment(p1, p2);
+        return segment.getModule();
+    }
 }
 
